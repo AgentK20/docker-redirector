@@ -24,7 +24,7 @@ cat <<EOF > /etc/nginx/conf.d/default.conf
 server {
 	listen 80;
 
-  return ${REDIRECT_CODE} ${REDIRECT_TARGET}\$request_uri;
+  return ${REDIRECT_CODE} ${REDIRECT_TARGET};
 }
 EOF
 
